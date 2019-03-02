@@ -1,0 +1,37 @@
+{
+  "name": "storybook-addon-authors",
+  "version": "1.0.0",
+  "description": "Component author information addon for storybook.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "build:watch": "babel --watch src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mixmaxhq/storybook-addon-authors.git"
+  },
+  "keywords": [
+    "addon",
+    "storybook"
+  ],
+  "author": "Andy Tran <andy@mixmax.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mixmaxhq/storybook-addon-authors/issues"
+  },
+  "homepage": "https://github.com/mixmaxhq/storybook-addon-authors#readme",
+  "dependencies": {
+    "@storybook/addons": "^4.1.13",
+    "@storybook/components": "^4.1.13",
+    "@storybook/core-events": "^4.1.13",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0"
+  }
+}
