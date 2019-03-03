@@ -62,3 +62,6 @@ typings/
 
 # Release
 dist/
+
+# MacOS
+.DS_Store
