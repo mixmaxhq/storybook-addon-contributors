@@ -8,6 +8,6 @@ addons.register(ADDON_ID, api => {
   addons.add(PANEL_ID, {
     type: types.TOOL,
     match: ({ viewMode }) => viewMode === 'story',
-    render: () => <Tool api={api} />
+    render: () => <Tool api={api} />,
   });
 });
