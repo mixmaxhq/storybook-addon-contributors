@@ -1,7 +1,7 @@
 {
-  "name": "storybook-addon-authors",
+  "name": "storybook-addon-component-info",
   "version": "1.0.0",
-  "description": "Component author information addon for storybook.js",
+  "description": "Component information addon for storybook.js",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mixmaxhq/storybook-addon-authors.git"
+    "url": "git+https://github.com/mixmaxhq/storybook-addon-component-info.git"
   },
   "keywords": [
     "addon",
@@ -18,9 +18,9 @@
   "author": "Andy Tran <andy@mixmax.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mixmaxhq/storybook-addon-authors/issues"
+    "url": "https://github.com/mixmaxhq/storybook-addon-component-info/issues"
   },
-  "homepage": "https://github.com/mixmaxhq/storybook-addon-authors#readme",
+  "homepage": "https://github.com/mixmaxhq/storybook-addon-component-info#readme",
   "peerDependencies": {
     "react": "*"
   },
