@@ -1,6 +1,6 @@
 {
   "name": "@mixmaxhq/storybook-addon-contributors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Contributors information addon for storybook.js",
   "main": "dist/index.js",
   "scripts": {
