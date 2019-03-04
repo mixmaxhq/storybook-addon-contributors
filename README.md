@@ -25,7 +25,7 @@ addDecorator(withContributors)
 ```
 
 Here is an example of using Contributors with a React component.
-```
+```javascript
 Button.contributors = [
   {
     name: 'Andy Tran',
