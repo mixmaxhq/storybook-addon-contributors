@@ -55,8 +55,8 @@ const Loader = styled.span`
 
 class Tool extends Component {
   state = {
-    authors: [],
     component: {},
+    contributors: [],
     loading: true,
     expanded: false,
   };
@@ -89,22 +89,22 @@ class Tool extends Component {
     );
   }
 
-  renderAuthorsInfo = () => {
-    const { authors, loading } = this.state;
+  renderContributorsInfo = () => {
+    const { contributors, loading } = this.state;
 
-    if (authors.length === 0) {
+    if (contributors.length === 0) {
       return (
         <Loader loading={loading}>
-          Authors was not defined
+          Contributors was not defined
         </Loader>
       )
     }
 
-    return authors.map(({ name, url}) => (
+    return contributors.map(({ name, url}) => (
       <div key={name}>
         <Loader loading={loading}>
           <Link href={url}>
-            {name || `Authors was not defined`}
+            {name || `Contributors was not defined`}
           </Link>
         </Loader>
       </div>
@@ -112,7 +112,7 @@ class Tool extends Component {
   }
 
   renderContent = () => {
-    const { authors, loading } = this.state;
+    const { contributors, loading } = this.state;
 
     return (
       <Wrapper>
@@ -126,11 +126,11 @@ class Tool extends Component {
         </Description>
         <Title>
           <Loader loading={loading}>
-            {authors.length > 1 ? 'Authors' : 'Author'}
+            {contributors.length > 1 ? 'Contributors' : 'Contributor'}
           </Loader>
         </Title>
         <Description>
-          {this.renderAuthorsInfo()}
+          {this.renderContributorsInfo()}
         </Description>
       </Wrapper>
     );

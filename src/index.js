@@ -3,8 +3,8 @@ import { STORY_RENDERED } from '@storybook/core-events';
 
 import { PARAM_KEY, SET } from './constants';
 
-export const withAuthors = makeDecorator({
-  name: 'withAuthors',
+export const withContributors = makeDecorator({
+  name: 'withContributors',
   parameterName: PARAM_KEY,
   skipIfNoParametersOrOptions: false,
   wrapper: (getStory, context, opt) => {
@@ -13,7 +13,7 @@ export const withAuthors = makeDecorator({
     const channel = addons.getChannel();
 
     channel.emit(SET, {
-      authors: story.type.authors,
+      contributors: story.type.contributors,
       component: {
         name: story.type.displayName,
         version: story.type.version,

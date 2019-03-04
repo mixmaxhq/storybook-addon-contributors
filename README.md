@@ -15,11 +15,21 @@ Add this line to your addons.js file (create this file inside your storybook con
 import '@mixmaxhq/storybook-addon-contributors/register';
 ```
 
-import the withContributors decorator to check your stories for contributors information.
+Import the withContributors decorator to check your stories for contributors information.
 ```javascript
 import { withContributors } from '@mixmaxhq/storybook-addon-contributors';
 
 // should only be added once
 // best place is in config.js
 addDecorator(withContributors)
+```
+
+Here is an example of using Contributors with a React component.
+```
+Button.contributors = [
+  {
+    name: 'Andy Tran',
+    url: 'https://github.com/andyhqtran',
+  },
+];
 ```
